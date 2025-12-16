@@ -1,0 +1,12 @@
+trigger: none
+
+pool:
+  name: Default
+
+steps:
+- script: |
+    whoami
+    hostname
+    java -version
+    echo "Self-hosted agent working"
+  displayName: "Verify EC2 Agent"
